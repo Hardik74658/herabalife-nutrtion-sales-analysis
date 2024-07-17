@@ -1,5 +1,5 @@
 import { Brand } from "@/components/Brand";
-import FeauturedCard from "@/components/FeauturedCard";
+import TechStack from "@/components/TechStack";
 import { GridImages } from "@/components/GridImages";
 import { HeroSec } from "@/components/HeroSec";
 import HeroSection from "@/components/HeroSection";
@@ -17,7 +17,7 @@ export default function Home() {
         <HeroSection/>
         {/* <GridImages/> */}
         {/* <HeroSec/> */}
-        <FeauturedCard/>
+        <TechStack/>
         <WhyChooseUs/>
         <TestinomialCards/>
         <UpcomingFeatures/>
