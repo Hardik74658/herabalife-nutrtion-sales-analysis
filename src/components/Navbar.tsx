@@ -33,17 +33,38 @@ function Navbar({ className }: { className?: string }) {
                 <MenuItem setActive={setActive} active={active} item="Home">
                 </MenuItem>
             </Link>
-             <Link href={"/services"}>   
-                <MenuItem setActive={setActive} active={active} item="Service">
-                    <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/electricians">Electricians</HoveredLink>
-                        <HoveredLink href="/electricians">Plumbers</HoveredLink>
-                        <HoveredLink href="/electricians">Cleaning</HoveredLink>
+             {/* <Link href={"/services"}>    */}
+                <MenuItem setActive={setActive} active={active} item="Analysis">
+                    <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+                        <ProductItem
+                        title="Data Extraction & Cleaning"
+                        href="https://algochurn.com"
+                        src="/images/DATA.png"
+                        description="Prepare for tech interviews like never before."
+                        />
+                        <ProductItem
+                        title="PowerBI"
+                        href="https://tailwindmasterkit.com"
+                        src="/images/PowerBI.png"
+                        description="Production ready Tailwind css components for your next project"
+                        />
+                        <ProductItem
+                        title="Probability & Hypothesis"
+                        href="https://gomoonbeam.com"
+                        src="/images/PH.png"
+                        description="Never write from scratch again. Go from idea to blog in minutes."
+                        />
+                        <ProductItem
+                        title="SQL"
+                        href="https://userogue.com"
+                        src="/images/SQL.png"
+                        description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+                        />
                     </div>
                 </MenuItem>
-            </Link>
+            {/* </Link> */}
             <Link href={"/workers"}>
-                <MenuItem setActive={setActive} active={active} item="Workers">
+                <MenuItem setActive={setActive} active={active} item="About Us">
                 </MenuItem>
             </Link>    
             <Link href={"/contactus"}>

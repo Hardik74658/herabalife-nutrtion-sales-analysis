@@ -9,6 +9,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
 import { CEOs } from "@/components/CEOs";
 import  Footer  from "@/components/Footer";
+import SImpleCard from "@/components/SimpleCard";
 
 export default function Home() {
   return (
@@ -18,9 +19,10 @@ export default function Home() {
         {/* <GridImages/> */}
         {/* <HeroSec/> */}
         <TechStack/>
-        <WhyChooseUs/>
-        <TestinomialCards/>
-        <UpcomingFeatures/>
+        <SImpleCard/>
+        {/* <WhyChooseUs/> */}
+        {/* <TestinomialCards/> */}
+        {/* <UpcomingFeatures/> */}
         {/* <Brand/> */}
         
         <Footer/>
