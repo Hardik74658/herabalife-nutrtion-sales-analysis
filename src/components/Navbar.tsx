@@ -38,13 +38,13 @@ function Navbar({ className }: { className?: string }) {
                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
                         <ProductItem
                         title="Data Extraction & Cleaning"
-                        href="https://algochurn.com"
+                        href="/DataExtraction"
                         src="/images/DATA.png"
                         description="Prepare for tech interviews like never before."
                         />
                         <ProductItem
                         title="PowerBI"
-                        href="https://tailwindmasterkit.com"
+                        href="/PowerBI"
                         src="/images/PowerBI.png"
                         description="Production ready Tailwind css components for your next project"
                         />
