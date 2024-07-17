@@ -28,7 +28,7 @@ function HeroSection() {
             </Highlight> */}
             <p className="m-12 font-normal bg-white dark:bg-black dark:bg-opacity-30  rounded-full p-0 text-md md:text-lg dark:text-neutral-300 text-neutral-900 max-w-lg mx-auto"
             >
-                Discover in-depth trends and patterns in Herbalife Nutrition's sales data from 2022-2024.
+                Welcome to our detailed analysis of Herbalife Nutrition's sales data. This project aims to provide insights into sales trends, top-performing products, and key customer demographics.
             </p>
             <div className="mt-4">
                 <Link href={"/services"}>

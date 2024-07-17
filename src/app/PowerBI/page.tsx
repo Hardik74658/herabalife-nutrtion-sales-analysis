@@ -48,57 +48,181 @@ function page() {
 
 const dummyContent = [
     {
-        title: "Format Of Data",
+        title: "Dashboard",
         description: (
             <>
-        <p className="text-justify">
-          Our Data Was In The Fprm Of PDFs As Shown Above So We Wrote a Python Script To Extract Data From This PDFs Using Libraries Like PyMuDf , Pandas, re and OS. The Main Logic Behind The Script Was Extracting Particular Data And Adding Them Into Appropriate Columns For That We Have To Write Really Complex Regular Expressions Specifically Designed For This PDFs Which Took Us 2 Days To Find Out Which Regular Expressions Should Be Used Here As After Extracting Data From PDFs Its Format Got Completely Changed Also All PDFs Did Not Have Same Format Sometimes, It Was Really Big Task And We Learned So Much In Doing This.
-        </p>
+        <div className="text-justify">
+            <br />
+            <hr className="timeline-horizontal " />
+            <br />        
+            
+            <h3 className="card-title my-2">
+                Summary of Key Findings:    
+            </h3>
+            <ul className="list-disc list-inside m-2">
+                <li>
+                    <span className="font-bold ">
+                        Total Customers :   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        144
+                    </span>
+                </li>
+                <li>
+                    
+                    <span className="font-bold ">
+                        Highest Sales by Coach :   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Hetalben Alakhukumar Pandya with 35.93M sales
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Most Selling Product :   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Afresh Energy Drink Mix-Lemon
+                    </span>                    
+                </li>
+            </ul>
+            
+            <br />
+            <hr className="timeline-horizontal " />
+            <br />
+            
+            <h3 className="card-title my-2">
+                Link to the Dashboard:
+                Explore our interactive Power BI Dashboard to dive deeper into the data.
+                Dashboard Page
+                Embedded Power BI Dashboard:
+                Embed your Power BI dashboard on this page for interactive exploration.
+            </h3>
+
+            <br />
+            <hr className="timeline-horizontal " />
+            <br />
+
+            <h3 className="card-title my-2">
+                Explanation of Each Visualization:
+            </h3>
+
+            <ul className="list-disc list-inside m-2">
+                <li>
+                    <span className="font-bold ">
+                        Total Customers :   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Displays the total number of unique customers.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Coach with Highest Number of Customers: 
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Highlights the coach with the most customers.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Sales Trend by Month:  
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        A line graph showing monthly sales trends.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Coach with Highest Sales:   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Displays the sales figures for top-performing coaches.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Customer with Highest Sales:   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Identifies the customer with the highest purchase volume.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        5 Least Selling Products:   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Lists products with the lowest sales.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Top 5 Most Selling Products:   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Highlights the best-selling products.
+                    </span>
+                </li>
+            </ul>
+            
+            <br />
+            <hr className="timeline-horizontal " />
+            <br />
+
+            <h3 className="card-title my-2">
+                Analysis and Conclusions Page
+                Detailed Analysis and Conclusions:
+            </h3>
+            <ul className="list-disc list-inside m-2">
+                <li>
+                    <span className="font-bold ">
+                        Total Customers and Sales Distribution:   
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        The dashboard shows a total of 144 unique customers. Hetalben Alakhukumar Pandya has the highest sales, indicating effective customer engagement and sales strategy.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Monthly Sales Trends:  
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Sales trends show significant spikes at various points, suggesting possible promotions or seasonal demand. Identifying these periods can help in planning future marketing strategies.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Top and Least Selling Products:
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Afresh Energy Drink Mix-Lemon is the most popular product, indicating a strong customer preference. Conversely, products like Buzz and F1 Select Alternative Shake have the least sales, suggesting a need for reevaluation or targeted marketing.
+                    </span>
+                </li>
+                <li>
+                    <span className="font-bold ">
+                        Coach Performance:
+                    </span>
+                    <span className="pl-6 my-1 block">
+                        Hetalben Alakhukumar Pandya leads in both the number of customers and total sales, highlighting their effectiveness in customer acquisition and retention.
+                    </span>
+                </li>
+            </ul>
+
+            <br />
+            <hr className="timeline-horizontal " />
+            <br />
+
+            
+
+
+
+        </div>
         
       </>
     ),
     badge: "React",
     image:
-    "/images/image copy.png",
-},
-{
-    title: "Script Of DataExtraction",
-    description: (
-        <>
-        <p className="text-justify">
-            Above Shown Function Was The Main Part Of Our Code To extract Data From This PDFs Of Orders Which Include Really Complex And Specifically Designed Regular Expressions For This PDFs.
-        </p>
-      </>
-    ),
-    badge: "Changelog",
-    image:
-    "/images/data_extraction_script.png",
-},
-{
-    title: "Manual Data Entry",
-    description: (
-        <>
-        <p className="text-justify">
-            After Doing All These our Script Wasn't Able To Extract Data Like Ship To Field And Delivery Charges From Some Orders So We Unfortunately Have To Do Manual Entry Of Those Data. 
-        </p>
-      </>
-    ),
-    badge: "Launch Week",
-    image:
-    "/images/DataEntry.jpg",
-},
-{
-    title: "Cleaning Data",
-    description: (
-        <>
-        <p className="text-justify">
-            After Collecting All The Raw Data We Have To Remove Fields Which Are Redudant Or Not Important For Our Analysis, Also We Have To Extract City , Pincode , State and Customer Name Like Fields From Single Field Named Ship To, Then We Also Have To Convert The Data Types Of All Columns, Have To Capitalize All Product And Customer Names So It Will Not Conflict With Other Data We Have And Hense It Does Not Understand Different Cases Same Names Different For Doing All These Tasks We Used Power Query.   
-        </p>
-      </>
-    ),
-    badge: "Launch Week",
-    image:
-    "/images/power_query.png",
-}
-];
+    "/images/powerbi_dashboard.png",
+}];
 export default page;
