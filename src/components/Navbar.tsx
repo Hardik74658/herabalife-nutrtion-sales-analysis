@@ -4,7 +4,6 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useSession,signOut } from "next-auth/react";
 import { delay } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
@@ -21,7 +20,6 @@ function Navbar({ className }: { className?: string }) {
     }
   }
 
-  const {data : session} = useSession()
   const router = useRouter()
 
   return (
@@ -50,51 +48,20 @@ function Navbar({ className }: { className?: string }) {
                         />
                         <ProductItem
                         title="Probability & Hypothesis"
-                        href="https://gomoonbeam.com"
+                        href="/Probability"
                         src="/images/PH.png"
                         description="Never write from scratch again. Go from idea to blog in minutes."
                         />
                         <ProductItem
                         title="SQL"
-                        href="https://userogue.com"
+                        href="/SQL"
                         src="/images/SQL.png"
                         description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                         />
                     </div>
                 </MenuItem>
             {/* </Link> */}
-            <Link href={"/workers"}>
-                <MenuItem setActive={setActive} active={active} item="About Us">
-                </MenuItem>
-            </Link>    
-            <Link href={"/contactus"}>
-                <MenuItem setActive={setActive} active={active} item="Contact Us">
-                </MenuItem>
-            </Link>
     
-            {
-                session ? 
-                (
-                    <Link href={'#'} onClick={()=>{
-                        toast.info("Logged Out Successfully")
-                        delay(()=>{
-                            signOut({
-                                callbackUrl:'/signup',
-                            })}
-                        ,4000) 
-                    }}>
-                        <MenuItem setActive={setActive} active={active} item="Logout">
-                        </MenuItem>
-                    </Link>
-                    
-                )
-                :(
-                    <Link href={"/signup"}>
-                        <MenuItem setActive={setActive} active={active} item="Register">
-                        </MenuItem>
-                    </Link>
-                )
-            }
             <label className="swap swap-rotate dark:text-black text-white">
         
                 {/* this hidden checkbox controls the state */}

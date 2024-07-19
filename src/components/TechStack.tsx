@@ -1,10 +1,8 @@
 "use client";
 import React from 'react'
-import { BackgroundGradient } from "./ui/background-gradient";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from 'next/link';
 import Image from "next/image";
-import TechStackCard from './TechStackCard';
 
 function TechStack() {
   return (
@@ -32,7 +30,7 @@ function TechStack() {
                             </CardItem>
                                 <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src="/images/DATA.png"
+                                    src="/images/Card/DATA.png"
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -40,7 +38,7 @@ function TechStack() {
                                 />
                                 </CardItem>
                                 <div className="flex justify-between items-center mt-20">
-                                <Link href={"/workers"}>
+                                <Link href={"/DataExtraction"}>
                                 <CardItem
                                     translateZ={20}
                                     as="button"
@@ -71,7 +69,7 @@ function TechStack() {
                             </CardItem>
                                 <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src="/images/PowerBI.png"
+                                    src="/images/Card/PowerBI.png"
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -79,7 +77,7 @@ function TechStack() {
                                 />
                                 </CardItem>
                                 <div className="flex justify-between items-center mt-20">
-                                <Link href={"/workers"}>
+                                <Link href={"/PowerBI"}>
                                 <CardItem
                                     translateZ={20}
                                     as="button"
@@ -110,7 +108,7 @@ function TechStack() {
                             </CardItem>
                                 <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src="/images/SQL.png"
+                                    src="/images/Card/SQL.png"
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -118,7 +116,7 @@ function TechStack() {
                                 />
                                 </CardItem>
                                 <div className="flex justify-between items-center mt-20">
-                                <Link href={"/workers"}>
+                                <Link href={"/SQL"}>
                                 <CardItem
                                     translateZ={20}
                                     as="button"
@@ -149,7 +147,7 @@ function TechStack() {
                             </CardItem>
                                 <CardItem translateZ="100" className="w-full mt-4">
                                 <Image
-                                    src="/images/PH.png"
+                                    src="/images/Card/PH.png"
                                     height="1000"
                                     width="1000"
                                     className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -157,7 +155,7 @@ function TechStack() {
                                 />
                                 </CardItem>
                                 <div className="flex justify-between items-center mt-20">
-                                <Link href={"/workers"}>
+                                <Link href={"/Probability"}>
                                 <CardItem
                                     translateZ={20}
                                     as="button"
@@ -169,7 +167,6 @@ function TechStack() {
                                 </div>
                             </CardBody>
             </CardContainer>
-            {/* <TechStackCard></TechStackCard> */} 
         </div>
         
     </div>

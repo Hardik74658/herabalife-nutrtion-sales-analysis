@@ -223,6 +223,6 @@ const dummyContent = [
     ),
     badge: "React",
     image:
-    "/images/powerbi_dashboard.png",
+    "/images/powerbi/powerbi_dashboard.png",
 }];
 export default page;

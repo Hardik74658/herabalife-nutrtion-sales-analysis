@@ -2,8 +2,6 @@
  
 import Image from "next/image";
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import Link from "next/link";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { twMerge } from "tailwind-merge";
@@ -56,7 +54,7 @@ const dummyContent = [
             </>
         ),
         badge: "React",
-        image:"/images/ph_1.png",
+        image:"/images/ph/ph_1.png",
     },
     {
         title: "2. Plot histograms and boxplots for amount, discount, and MRP to understand their distributions.",
@@ -67,7 +65,7 @@ const dummyContent = [
             </>
         ),
         badge: "React",
-        image:"/images/ph_2.png",
+        image:"/images/ph/ph_2.png",
     },
     {
         title: "3. Calculate the probability of an order being canceled. This can be done by dividing the number of canceled orders by the total number of orders.",
@@ -78,7 +76,7 @@ const dummyContent = [
             </>
         ),
         badge: "React",
-        image:"/images/ph_3.png",
+        image:"/images/ph/ph_3.png",
     },
     {
         title: "4. Calculate the probability of an order being canceled given different conditions, such as high discount rates or specific states",
@@ -89,8 +87,8 @@ const dummyContent = [
             </>
         ),
         badge: "React",
-        image:"/images/ph_4.png",
-        image2:"/images/ph_4_2.png",
+        image:"/images/ph/ph_4.png",
+        image2:"/images/ph/ph_4_2.png",
     },
     {
         title: "5 Compute the correlation matrix to identify relationships between amount, discount, MRP, and quantity.",
@@ -101,7 +99,7 @@ const dummyContent = [
             </>
         ),
         badge: "React",
-        image:"/images/ph_5.png",
+        image:"/images/ph/ph_5.png",
     },
     {
         title: "6. Use a chi-square test to examine the relationship between categorical variables, such as state and order cancellation status.",
@@ -131,7 +129,7 @@ const dummyContent = [
         // image:"/images/ph_1.png",
     },
     {
-        title: "8> Conduct an ANOVA to determine if there are significant differences in the average order amount across different states or cities.",
+        title: "7. Conduct an ANOVA to determine if there are significant differences in the average order amount across different states or cities.",
         description: (
             <>
                 <h1>
@@ -153,34 +151,78 @@ const dummyContent = [
             </>
         ),
         badge: "React",
-        image:"/images/ph_5.png",
+        image:"/images/ph/ph_5.png",
     },
     {
-        title: "6. Use a chi-square test to examine the relationship between categorical variables, such as state and order cancellation status.",
+        title: "8. Analyze trends in the order data over time by plotting orderd_date against amount",
         description: (
             <>
                 <h2>
-                    H0 = State And Order Cancellation are not related.
+                    Linearly Increasing Growth 
                 </h2>
-                <h2>
-                    Ha = State And Order Cancellation are related.
-                </h2>
-                <h2>
-                    p=0.9952
-                </h2>
-                <h2>
-                    alpha=0.05
-                </h2>
-                <h2>
-                    Hense, Failed to Reject H0.Sate And Order Cancelling Status Are Not Related.   
-                </h2>
-
-                
 
             </>
         ),
         badge: "React",
-        // image:"/images/ph_1.png",
+        image:"/images/ph/ph_6.png",
+    },
+    {
+        title: "9. Perform Recency, Frequency, Monetary (RFM) analysis to segment customers based on their purchasing behavior.",
+        description: (
+            <>
+                <h1 className="text-lg font-bold mb-4 underline">
+                    RFM Analysis 
+                </h1>
+                <ul className="list list-disc list-inside text-justify">
+                    <span className="block font-bold">
+                        Recency (R):
+                    </span> 
+                    <li>
+                        How recently a customer made a purchase. Customers who have purchased recently are more likely to purchase again.
+                    </li>
+                    <span className="block font-bold">
+                        Frequency(F):
+                    </span> 
+                    <li>
+                        How often has a customer made a purchase?
+                    </li>
+                    <span className="block font-bold">
+                        Monetary(M):
+                    </span> 
+                    <li>
+                        How much has a customer spent in total?
+                    </li>
+                </ul>
+                <hr className="my-8"/>
+                <h1 className="text-lg font-bold mb-4 underline">Conclusions</h1>
+                <ul className="list list-disc list-inside text-justify">
+                    <span className="block font-bold mb-2">
+                        Customer Value:
+                    </span> 
+                    <li>
+                        Alakh Pandya is the highest value customer with frequent purchases and the highest spending amount.
+                    </li>
+                    <li>
+                        Aniruddhsinh Dhummad has potential for increased engagement with moderate frequency and spending.
+                    </li>
+                    <span className="block font-bold mb-2 mt-6">
+                        Customer Segmentation:
+                    </span> 
+                    <li>
+                        Aarti Pandya: Very infrequent purchases (Recency: 495 days), moderate frequency (4 times), high spending (₹16455.11).
+                    </li>
+                    <li>
+                        Ahesan Sabirali Saiyad: Recent purchaser (Recency: 9 days), low frequency (3 times), moderate spending (₹5856.93).
+                    </li>
+                    <li>
+                        Alakh Pandya: Frequent and high spender (Recency: 27 days, Frequency: 116, Monetary: ₹638603.33).
+                    </li>
+                    
+                </ul>
+            </>
+        ),
+        badge: "React",
+        image:"/images/ph/ph_7.png",
     },
 
 ];

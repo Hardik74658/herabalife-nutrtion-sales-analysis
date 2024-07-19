@@ -59,7 +59,7 @@ const dummyContent = [
     ),
     badge: "React",
     image:
-    "/images/image copy.png",
+    "/images/DataExtraction/image copy.png",
 },
 {
     title: "Script Of DataExtraction",
@@ -72,7 +72,7 @@ const dummyContent = [
     ),
     badge: "Changelog",
     image:
-    "/images/data_extraction_script.png",
+    "/images/DataExtraction/data_extraction_script.png",
 },
 {
     title: "Manual Data Entry",
@@ -85,7 +85,7 @@ const dummyContent = [
     ),
     badge: "Launch Week",
     image:
-    "/images/DataEntry.jpg",
+    "/images/DataExtraction/DataEntry.jpg",
 },
 {
     title: "Cleaning Data",
@@ -98,7 +98,7 @@ const dummyContent = [
     ),
     badge: "Launch Week",
     image:
-    "/images/power_query.png",
+    "/images/DataExtraction/power_query.png",
 }
 ];
 export default page;

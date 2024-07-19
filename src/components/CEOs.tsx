@@ -5,33 +5,39 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 const teamMembers = [
     {
         id: 1,
-        name: "Ishad Shah",
-        designation: "Head of Operations",
-        image: "/images/ishad.jpg"
+        name: "Khusi Patel",
+        designation: "",
+        image: "/images/team/unknown.jpg"
     },
     {
         id: 2,
-        name: "Akshat Thakkar",
-        designation: "Chief Financial Officer",
-        image: "/images/akshat.jpg"
+        name: "Ritu Kapadiya",
+        designation: "",
+        image: "/images/team/unknown.jpg"
     },
     {
         id: 3,
-        name: "Hardik Songara",
-        designation: "Founder & CEO",
-        image: "/images/Hardik (2).jpg"
+        name: "Devanshi Trivedi",
+        designation: "",
+        image: "/images/team/Devanshi.png"
     },
     {
         id: 4,
-        name: "Nirbhay Datt",
-        designation: "Marketing Manager",
-        image: "/images/nirbhay.jpg"
+        name: "Hardik Songara",
+        designation: "",
+        image: "/images/team/Hardik (1).jpg"
     },
     {
         id: 5,
-        name: "Jay Dave",
-        designation: "Customer Support Specialist",
-        image: "/images/ishad.jpg"
+        name: "Akshat Thakkar",
+        designation: "",
+        image: "/images/team/akshat.jpg"
+    },
+    {
+        id: 6,
+        name: "Jay Nasriwala",
+        designation: "",
+        image: "/images/team/JayNasriwala.png"
     }
 ];
 
