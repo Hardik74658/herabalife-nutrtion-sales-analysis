@@ -2,8 +2,6 @@
  
 import Image from "next/image";
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import Link from "next/link";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { twMerge } from "tailwind-merge";
@@ -21,11 +19,11 @@ function page() {
 
                     {dummyContent.map((item, index) => (
                     <div key={`content-${index}`} className="mb-10">
-                        <p className={twMerge( "text-white text-xl mb-4")}>
+                        <p className={twMerge( "dark:text-white text-black dark:bg-transparent bg-white bg-opacity-80 rounded-lg text-xl mb-4")}>
                         {item.title}
                         </p>
 
-                        <div className="text-sm text-white  prose prose-sm dark:prose-invert">
+                        <div className="text-sm prose prose-sm dark:prose-invert">
                         {item?.image && (
                             <Image
                             src={item.image}
@@ -35,7 +33,9 @@ function page() {
                             className="rounded-lg mb-10 object-cover"
                             />
                         )}
-                        {item.description}
+                            <div className="dark:text-white text-black dark:bg-transparent bg-white bg-opacity-80 p-1 rounded-lg">
+                                {item.description}
+                            </div>
                         </div>
                     </div>
                     ))}

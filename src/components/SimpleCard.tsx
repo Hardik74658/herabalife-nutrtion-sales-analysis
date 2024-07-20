@@ -38,7 +38,7 @@ export  default function SImpleCard() {
     
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-black bg-grid-small-slate-800 rounded-8xl bg-opacity-60 relative z-10 py-10 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white dark:bg-black dark:bg-grid-small-slate-800 bg-grid-small-slate-300 rounded-8xl bg-opacity-60 relative z-10 py-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}

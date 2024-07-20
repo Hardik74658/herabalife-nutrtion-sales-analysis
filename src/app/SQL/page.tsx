@@ -19,7 +19,7 @@ function page() {
 
                     {dummyContent.map((item, index) => (
                     <div key={`content-${index}`} className="mb-10">
-                        <p className={twMerge( "text-white text-xl mb-4")}>
+                        <p className={twMerge( "dark:text-white text-black dark:bg-transparent bg-white bg-opacity-80 rounded-lg text-xl mb-4")}>
                         {item.title}
                         </p>
 
@@ -42,7 +42,9 @@ function page() {
                             className="rounded-lg mb-10 object-cover"
                             />
                         )}
-                        {item.description}
+                        <div className="dark:text-white text-black dark:bg-transparent bg-white bg-opacity-50 p-1 rounded-lg">
+                            {item.description}
+                        </div>
                         </div>
                     </div>
                     ))}
