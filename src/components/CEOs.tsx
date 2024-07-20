@@ -13,7 +13,7 @@ const teamMembers = [
         id: 2,
         name: "Ritu Kapadiya",
         designation: "",
-        image: "/images/team/unknown.jpg"
+        image: "/images/team/ritu.jpg"
     },
     {
         id: 3,
