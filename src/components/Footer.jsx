@@ -3,17 +3,17 @@ import { CEOs } from "./CEOs";
 
 function Footer() {
     return (
-      <footer className=" bg-transparent dark:text-white text-gray-800 py-12 bg-white bg-opacity-60 rounded">
+      <footer className=" dark:bg-transparent dark:text-white text-gray-800 py-12 bg-white bg-opacity-60 rounded">
           <CEOs className="mb-8"/>
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
           <div>
-            <h2 className="text-gray-800 bg-white bg-opacity-60 dark:text-white text-lg font-semibold mb-4">About Us</h2>
-            <p className="mb-4 text-justify bg-white bg-opacity-60 rounded-lg p-1">
+            <h2 className="text-gray-800 dark:text-white text-lg font-semibold mb-4">About Us</h2>
+            <p className="mb-4 text-justify  p-1 ">
             We provide insightful analysis of Herbalife Nutrition sales data, using Power BI and SQL. Our site offers valuable visualizations and metrics to enhance your understanding of sales trends and customer behavior.
             </p>
           </div>
           <div className="">
-            <h2 className="text-gray-800 dark:text-white text-lg bg-white bg-opacity-60 font-semibold mb-4">Quick Links</h2>
+            <h2 className="text-gray-800 dark:text-white text-lg font-semibold  mb-4">Quick Links</h2>
             <ul className="text-gray-600 dark:text-gray-300">
               <li>
                 <a
